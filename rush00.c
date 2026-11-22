@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush00.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: DevPapito <pietroeziosuzano@gmail.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/18 22:12:48 by DevPapito         #+#    #+#             */
+/*   Updated: 2026/11/18 22:12:48 by DevPapito        ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_putchar(char c);
 
 static void	init_chars(char *chars)
@@ -8,12 +20,12 @@ static void	init_chars(char *chars)
 	chars[3] = ' ';
 }
 
-static int is_corner(int angle, int index)
+static int	is_corner(int angle, int index)
 {
 	return (angle == 0 || angle == index - 1);
 }
 
-static void fill(int row, int x, int mode, char *chars)
+static void	fill(int row, int x, int mode, char *chars)
 {
 	while (row < x)
 	{
